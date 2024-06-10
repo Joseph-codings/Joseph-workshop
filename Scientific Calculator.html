@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sci Calculator</title>
+      <link rel="stylesheet" type="text/css" href="Sci Calculator.css">
+      <script src="javacal.js"></script>
+      <style>
+        input{
+            background-color: white;
+
+}
+          .btn0,.btn_clear, .del {
+        
+
+   width: 71.9px; 
+    height:30px;
+    outline: 1px solid #dde2ddeb;
+    border-radius: 2.5px;
+    background-color: #4888fe;
+}
+div.up{
+    position: relative;
+    padding-left: 4px;
+}
+.calculate{
+    padding-left:160px;
+    padding-top: 30px;
+    height: 60px;
+
+}
+.btnAdd{
+    margin-top: 3px ;
+
+}
+.btn0, .btn1,.btn2,.btn3,.btn4,.btn5,.btn6,.btn7,.btn8,.btn9{
+    background-color: #1672b0b0;
+}
+.foot{
+    
+    color: white;
+    font-size: 14px;
+    padding: 1px 1px 10px 90px;
+    line-height: 20px;
+}
+.header{
+    padding: 10px 2px 20px 2px;
+    line-height: 1px; 
+    font-size: 15px;
+    color: white;
+    background-color: ;
+}
+ .btn1, .btn2, .btn3, .btnSub{
+    position:relative;
+     bottom: 15.5px;
+ }
+      .btn0, .btnAdd, .dot{
+    position:relative;
+ bottom: 32px;
+      }
+      </style>
+
+</head>
+<body>
+      <div class="cal">
+    <form>
+        <div class="header">
+     <tr>
+       <td>Scientific Calculator</td> 
+    </tr>
+</div>
+      <input type="text" id="Display" placeholder="0" readonly /><hr>
+
+    
+                
+<button style=" background-color: red;" class="btn_clear" type="button" onclick="Clear_Nums()">Clear</button>
+      <button class="per_th" type="button" onclick="Numbers('/1000'); calculate()" >‰</button>
+      <button style="margin-bottom:10px; background-color: #ffee00b0;" class="del" type="button" onclick="clear_lastNum()">del</button>
+          
+      <br>
+      
+      
+      <button class="percentage" type="button" onclick="Numbers('/100'); calculate()">%</button>
+      <button class="brackO"type="button" onclick="Numbers('(')">(</button>
+      <button class="brackC"type="button" onclick="Numbers(')')">)</button>
+      <button class="recipr" type="button" onclick="reciprocal()">⅟x</button>
+      <button class="pi" type="button" onclick="Numbers('3.14')">π</button>
+      <br>
+       
+      <button class="power" type="button" onclick="Numbers('**')">^</button>
+      <button class="sqrt" type="button" onclick="square()">√</button>
+      <button class="fac" type="button" onclick="factorial()">n!</button>
+      <button class="power_2" type="button" onclick="pw2()">x²</button>
+       <button class="btnsin" type="button" onclick="logarithm()">log</button>
+      <br>
+
+  
+      <button class="btn7" type="button" onclick="Numbers('7')">7</button>
+      <button class="btn8" type="button" onclick="Numbers('8')">8</button>
+      <button class="btn9" type="button" onclick="Numbers('9')">9</button>
+      <button style="background-color:green" class="btnDiv" type="button" onclick="Numbers('/')">÷</button>
+      <button class="btnl" type="button" onclick="pw3()">ln</button><br>
+
+
+      
+      
+      <button class="btn4" type="button" onclick="Numbers('4')">4</button>
+      <button class="btn5" type="button" onclick="Numbers('5')">5</button>
+      <button class="btn6" type="button" onclick="Numbers('6')">6</button>
+      <button style="background-color:green" class="btnMul" type="button" onclick="Numbers('*')">x</button>
+      <button class="btncos" type="button" onclick="Numbers()">e</button>
+    <br>
+
+      
+      <button class="btn1" type="button" onclick="Numbers('1')">1</button>
+      <button class="btn2" type="button" onclick="Numbers('2')">2</button>
+      <button class="btn3" type="button" onclick="Numbers('3')">3</button>
+      <button style="background-color:green" class="btnSub" type="button" onclick="Numbers('-')">-</button>
+      <button style="background-color: green; height:70px; position:relative; top:4px" class="calculation" type="button" onclick="calculate()">=</button>
+      <br>
+
+
+      <button  class="btn0" type="button" onclick="Numbers('0')"><strong>0</strong></button>
+      <button class="dot" type="button" onclick="Numbers('.')"><strong>.</strong></button>
+      <button style="background-color:green" class="btnAdd"type="button" onclick="Numbers('+')">+</button>
+      <br>
+      <div class="foot">
+        <small><i style="position:relative; bottom: 29.5px; left: 7px">powered by @passion</i></small>
+    </div>
+</div>      
+
+       
+      </form>
+</div>
+</body>
+</html>
